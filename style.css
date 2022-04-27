@@ -112,3 +112,103 @@ a#lista:hover
     from {opacity: .4}
     to {opacity: 1}
   }
+  a#honapkutya
+  {
+    color: rgb(48, 48, 48);
+    font-size: 14pt;
+    font-family: Calibri;
+    text-decoration: none;
+   
+
+  }
+  table#kedvenc{
+      
+    margin: auto;
+    width: 1000px;
+    height: 350px;
+    box-shadow: 0pt 0pt 5pt ;
+    border-radius: 5pt;
+    table-layout: fixed;
+  }
+  tr
+  {
+      
+      display: block;
+    margin: auto;
+  
+  }
+  td
+  {
+    display: inline-block;
+    margin: auto;
+    
+    
+  }
+  
+  .image {
+    margin: auto;
+    position: relative;
+    width: 400px;
+}
+
+.image__img {
+    display: block;
+    height: 180px;
+    border-radius: 5pt;
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5pt;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image__overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.image__overlay--primary {
+    background: #76ffe4;
+}
+
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+}
+
+.image__overlay:hover > * {
+    transform: translateY(0);
+}
+
+.image__title {
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(75, 74, 74);
+}
+
+.image__description {
+    text-align: center;
+    font-size: 10pt;
+    font-family: Calibri;
+    text-decoration: none;
+    width: 80%;
+    color: rgb(75, 74, 74);
+    
+}
+  
