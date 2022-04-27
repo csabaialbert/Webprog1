@@ -1,7 +1,92 @@
 <!DOCTYPE html>
 <html>
-    <meta charset="UTF-8">
     <head>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css"  href="style.css">
+        <meta charset="utf-8">
+        <title>Csömöri Állatvédő Civil Szervezet | Kutyamenhely</title>
+    
     </head>
+    <main class ="szinez" >
+        <a href="#"><img src="logo.png" alt="logo" class="center"></a>
+        <div class ="table">
+            <ul id="vizszintes">
+                <li><a id="lista" href="#">Főoldal</a></li>
+                <li><a id="lista" href="#">Lakóink</a></li>
+                <li><a id="lista" href="#">Adó 1% felajánlás</a></li>
+                <li><a id="lista" href="#">Támogatás</a></li>
+                <li><a id="lista" href="#">Örökbefogadás</a></li>
+                <li><a id="lista" href="#">Blog</a></li>
+                <li><a id="lista" href="#">Hasznos oldalak</a></li>
+                <li><a id="lista" href="#">Rólunk</a></li>
+                <li><a id="lista" href="#">Kapcsolat</a></li>
+            </ul>
+        </div>  
+    </main>
+    <body>
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <img src="1-szazalek-slide_2022-kolykok.webp" style="width:100%">
+            </div>
+          
+            <div class="mySlides fade">
+              <img src="1-szazalek-slide_2022.webp" style="width:100%">
+            </div>
+          
+            <div class="mySlides fade">
+              <img src="Chip-ellenőrzés.webp" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="ivartalanítas-slide-2019-1.webp" style="width:100%">
+              </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+                // Thumbnail image controls
+                function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) 
+            {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) 
+            {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+    </body>
 </html>
