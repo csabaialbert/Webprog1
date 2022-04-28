@@ -23,7 +23,10 @@ a#lista
     color: rgb(189, 189, 189);    /*margin: 10px 100px 50px 10px;*/
     border-radius: 20%;
 }
-
+p
+{
+  
+}
 ul#vizszintes
 {
 	list-style: none;

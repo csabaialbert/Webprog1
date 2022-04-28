@@ -9,7 +9,7 @@
 	<body>
     <main class ="szinez" >
         <a href="#"><img src="logo.png" alt="logo" class="center"></a>
-            <nav>
+		<div class ="table">
                 <ul id="vizszintes">
 					<?php foreach ($oldalak as $url => $oldal) { ?>
 						<li<?= (($oldal == $keres) ? '' : '') ?>>
@@ -18,15 +18,16 @@
 						</li>
 					<?php } ?>
                 </ul>
-            </nav>
+					</div>
         <div id="content">
             <?php include("./templates/pages/{$keres['fajl']}.tpl.php"); ?>
-        </div>
-		</main>
-	</body>
+    	</div>
+	</main>
+	
     <footer>
         <?php if(isset($lablec['copyright'])) { ?>&copy;&nbsp;<?= $lablec['copyright'] ?> <?php } ?>
 		&nbsp;
         <?php if(isset($lablec['ceg'])) { ?><?= $lablec['ceg']; ?><?php } ?>
     </footer>
+	</body>
 </html>

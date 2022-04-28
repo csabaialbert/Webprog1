@@ -5,6 +5,9 @@
 		if (isset($oldalak[$oldal]) && file_exists("./templates/pages/{$oldalak[$oldal]['fajl']}.tpl.php")) {
 			$keres = $oldalak[$oldal];
 		}
+        else if (isset($kutyak[$oldal]) && file_exists("./templates/pages/{$kutyak[$oldal]['fajl']}.tpl.php")) {
+			$keres = $kutyak[$oldal];
+		}
 		else if (isset($extrak[$oldal]) && file_exists("./templates/pages/{$extrak[$oldal]['fajl']}.tpl.php")) {
 			$keres = $extrak[$oldal];
 		}

@@ -1,0 +1,467 @@
+.szinez
+{
+    background-color:rgb(233, 79, 79);
+    height: 230px;
+    border-radius: 5pt;
+}
+.center 
+{
+    display: block;
+    margin:auto;
+    padding-top: 30px;
+}
+html 
+{
+    height: auto;
+}
+
+footer#lab
+{
+    text-align: center;
+    font-size: 18pt;
+    font-family: Calibri;
+    text-decoration: none;
+    width: 100%;
+    color: white;
+    padding-top: 50px;
+    height: 100px;
+    background-color:darkslategray;
+    margin-top: 20%;
+    box-shadow: 2pt 2pt 5pt ;
+    border-radius: 5pt;
+    
+}
+
+a#lista
+{
+    display: inline;
+    text-align:center;
+    width: auto;
+    font-size: 14pt;
+    font-family: Calibri;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(189, 189, 189);    /*margin: 10px 100px 50px 10px;*/
+    border-radius: 20%;
+}
+
+ul#vizszintes
+{
+	list-style: none;
+}
+li
+{
+    display: inline;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+a#lista:hover
+{
+    color: rgb(255, 255, 255);
+}
+.table 
+{
+	display: table;   
+	margin: auto;
+    padding-top: 30px;
+}
+
+.slideshow-container {
+    padding-top: 20px;
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    border-radius: 5pt;
+  }
+  
+
+  .mySlides {
+    display: none;
+  }
+  
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+ 
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+  a#honapkutya
+  {
+    color: rgb(48, 48, 48);
+    font-size: 14pt;
+    font-family: Calibri;
+    text-decoration: none;
+   
+
+  }
+  table#kedvenc{
+    
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: 350px;
+    box-shadow: 0pt 0pt 5pt ;
+    border-radius: 5pt;
+    table-layout: fixed;
+    
+  }
+  tr
+  {
+    
+    display: block;
+    margin: auto;
+  
+  }
+  tr#honapkutya
+  {
+      
+    
+    margin: auto;
+    width: 100%;
+    text-align: center;
+  }
+  td
+  {
+    display: inline-block;
+    margin: auto;
+  }
+  tr#kepek
+  {
+    display:inline-flexbox;
+    margin: auto;
+    width:fit-content;
+    padding-top: 50px;
+  }
+  
+  
+  .image {
+    margin: auto;
+    position: relative;
+    width: auto;
+}
+
+.image__img {
+    display: block;
+    height: 180px;
+    border-radius: 5pt;
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5pt;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image__overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.image__overlay--primary {
+    background: #76ffe4;
+}
+
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 0.9;
+}
+
+.image__overlay:hover > * {
+    transform: translateY(0);
+}
+
+.image__title {
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(75, 74, 74);
+}
+
+.image__description {
+    text-align: center;
+    font-size: 10pt;
+    font-family: Calibri;
+    text-decoration: none;
+    width: 80%;
+    color: rgb(75, 74, 74);
+    
+}
+  
+p#idézet
+{   
+    text-align: center;
+    font-size: 12pt;
+    font-family: Calibri;
+    font-weight: bolder;
+    font-style: italic;
+    text-decoration: none;
+    width: 400px;
+    padding-left: 100px;
+    color: rgb(75, 74, 74);
+}
+div#indent
+{   
+    width: 600px;
+    margin: auto;
+}
+h1#cim
+{
+    text-align: center;
+    font-size: 36pt;
+    font-family: Calibri;
+    font-weight: bolder;
+    text-decoration: none;
+    color: rgb(75, 74, 74);
+    border-bottom: 3px solid #717171;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+h2
+{
+    text-align: center;
+    font-size: 28pt;
+    font-family: Calibri;
+    font-weight: bolder;
+    text-decoration: none;
+    color: rgb(75, 74, 74);
+}
+h2#alcim
+{
+    text-align: center;
+    font-size: 22pt;
+    font-family: Calibri;
+    font-weight: bolder;
+    text-decoration: none;
+    color: rgb(75, 74, 74);
+}
+legend
+{
+    text-align: center;
+    font-size: 28pt;
+    font-family: Calibri;
+    font-weight: bolder;
+    text-decoration: none;
+    color: rgb(75, 74, 74);
+}
+input
+{
+    text-align: center;
+    font-size: 14pt;
+    font-family: Calibri;
+    font-weight: bolder;
+    text-decoration: none;
+    color: rgb(75, 74, 74);
+}
+p
+{
+    font-size: 14pt;
+    font-family: Calibri;
+    text-decoration: none;
+    color: rgb(75, 74, 74);
+}
+.aligncenter
+{
+    margin: auto
+}
+div#vid
+{
+    padding-bottom: 80px;
+}
+p#koszonet
+{
+    text-align: center;
+    font-size: 18pt;
+    font-family: Calibri;
+    font-weight: bolder;
+    text-decoration: none;
+    width:550px;
+    padding-left: 25px;
+    color: rgb(75, 74, 74);
+}
+p#szazalek
+{
+    text-align: center;
+    font-size: 14pt;
+    font-family: Calibri;   
+    text-decoration: none;
+    width:550px;
+    padding-left: 25px;
+    color: rgb(75, 74, 74);
+}
+td#kapcsolat
+{
+    display: inline-block;
+    font-size: 12pt;
+    font-family: Calibri;   
+    text-decoration: none;
+    width:250px;
+    margin: auto;
+    color: rgb(75, 74, 74);
+    background-color: antiquewhite;
+    padding-left: 20pt;
+}
+td#kapcsolat1
+{
+    display: inline-block;
+    font-size: 12pt;
+    font-family: Calibri;   
+    text-decoration: none;
+    width:250px;
+    margin: auto;
+    color: rgb(75, 74, 74);
+    background-color:aquamarine;
+    padding-left: 20pt;
+}
+table#kapcs
+{
+    width: 580px;
+    margin: auto;
+   
+    border-width: 0pt;
+}
+
+div#galeria 
+{
+    margin: 0 auto;
+    width: 80%;
+}
+div.kep 
+{ 
+    display: inline-block;
+    margin: auto;
+}
+
+div.kep img 
+{ 
+    width: 400px;
+    height: 300px; 
+    margin: auto;
+}
+
+td#galeria
+{
+    display: inline-block;
+    font-size: 12pt;
+    font-family: Calibri;   
+    text-decoration: none;
+    width:200px;
+    margin: auto;
+    color: rgb(75, 74, 74);
+    background-color: rgb(241, 199, 143);
+    padding-left: 20pt;
+    border-style: inset;
+    border-radius: 5pt;
+    border-color: #b6b5b5;
+}
+td#galeria:hover
+{
+    border-color: #dfdfdf;
+    background-color: rgb(255, 224, 184);
+}
+td#galeria1
+{
+    display: inline-block;
+    font-size: 12pt;
+    font-family: Calibri;   
+    text-decoration: none;
+    width:200px;
+    margin: auto;
+    color: rgb(75, 74, 74);
+    background-color:rgb(56, 238, 177);
+    padding-left: 20pt; 
+    border-style: inset;
+    border-radius: 5pt;
+    border-color: #b6b5b5;
+}
+td#galeria1:hover
+{
+    border-color: #dfdfdf;
+    background-color: rgb(134, 255, 215);
+}
+table#gal
+{
+    width: 1000px;
+    margin: auto;
+   
+    border-width: 0pt;
+}
+div#belepett
+{
+    float: left;
+    font-size: 12pt;
+    font-family: Calibri;   
+    text-decoration: none;
+    width:200px;
+    margin: auto;
+    color: rgb(75, 74, 74);
+}
+
+fieldset
+{
+    width: 200px;
+    margin: auto;
+   
+}

@@ -15,6 +15,7 @@ a#lista
 {
     display: inline;
     text-align:center;
+
     width: auto;
     font-size: 14pt;
     font-family: Calibri;
@@ -27,6 +28,7 @@ a#lista
 ul#vizszintes
 {
 	list-style: none;
+  margin: auto;
 }
 li
 {
@@ -133,7 +135,7 @@ a#lista:hover
   tr
   {
       
-      display: block;
+    display: block;
     margin: auto;
   
   }
@@ -143,6 +145,12 @@ a#lista:hover
     margin: auto;
     
     
+  }
+  tr#honapkutya
+  {
+    width: 100%;
+    margin: auto;
+    border-style:dotted;
   }
   
   .image {
@@ -172,7 +180,7 @@ a#lista:hover
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: opacity 0.25s;
+    transition: opacity 0.2 0.25s;
 }
 
 .image__overlay--blur {
@@ -189,7 +197,7 @@ a#lista:hover
 }
 
 .image__overlay:hover {
-    opacity: 1;
+    opacity: 0.8;
 }
 
 .image__overlay:hover > * {
@@ -211,4 +219,28 @@ a#lista:hover
     color: rgb(75, 74, 74);
     
 }
-  
+footer {
+  position: fixed;
+  padding: 10px 10px 0px 10px;
+  bottom: 0;
+  width: 100%;
+  /* Height of the footer*/ 
+  height: 150px;
+  background: grey;
+}
+div#content {
+  display: table-cell;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #99FFCC;
+  padding: 15px;
+}
+
+div#content img{
+  float: right;
+  width: 20em;
+  height: auto;
+  margin: 0 0 15px 15px;
+  padding: 3px;
+  border: 3px solid blue;
+}

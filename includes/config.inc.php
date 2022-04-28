@@ -12,7 +12,7 @@ $fejlec = array(
 
 $lablec = array(
     'copyright' => 'Copyright '.date("Y").'.',
-    'ceg' => 'Mini honlap Kft.'
+    'ceg' => 'Csömöri Állatvédő Civil Szervezet | Kutyamenhely'
 );
 
 $oldalak = array(

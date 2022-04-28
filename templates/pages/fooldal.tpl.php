@@ -64,26 +64,26 @@
         }
         </script>
         <table id="kedvenc">
-            <tr>
-                <td ><div class="image__title">A hónap kutyái</div></td>
+            <tr id="honapkutya">
+                <td><div class="image__title">A hónap kutyái</div></td>
             </tr>
             <tr>
                 <td>
-        <a href="">
-        <div class="image">
-            <img class="image__img" src="Romeo-01-k.jpg" alt="Romeo">
-            <div class="image__overlay image__overlay--primary">
-                <div class="image__title">Rómeó</div>
-                <p class="image__description">
-                    Középkorú, aktív, de nyugodt, kedves,
+                    <a href="">
+                    <div class="image">
+                        <img class="image__img" src="Romeo-01-k.jpg" alt="Romeo">
+                        <div class="image__overlay image__overlay--primary">
+                         <div class="image__title">Rómeó</div>
+                            <p class="image__description">
+                            Középkorú, aktív, de nyugodt, kedves,
                              közepes testalkatú kutyaÚr vagyok, aki oltott,
                              chipes és az ivartalanításon is átesett, 
                             vagyis "csak" egy fantasztikus Gazdi
                              hiányzik az életéből
-                </p>
-            </div>
-        </div>
-    </a>
+                            </p>
+                        </div>
+                    </div>
+                    </a>
 </td>
 <td>
     <a href="">
