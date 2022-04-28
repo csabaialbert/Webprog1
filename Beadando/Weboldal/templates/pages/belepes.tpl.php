@@ -1,5 +1,7 @@
-    <form action = "?oldal=belep" method = "post">
-    <h2 id="alcim">Regisztrálja magát, ha még nem felhasználó!</h2>
+<h2 id="alcim">Regisztrálja magát, ha még nem felhasználó!</h2>
+    
+    <form class="d-flex justify-content-center"  style="margin-bottom: 80px;"action = "?oldal=belep" method = "post">
+
       <fieldset>
         <legend>Bejlentkezés</legend>
         <br>
@@ -10,7 +12,7 @@
       </fieldset>
     </form>
     
-    <form action = "?oldal=regisztral" method = "post">
+    <form class="d-flex justify-content-center"  style="margin-bottom: 80px;" action = "?oldal=regisztral" method = "post">
       <fieldset>
         <legend>Regisztráció</legend>
         <br>
