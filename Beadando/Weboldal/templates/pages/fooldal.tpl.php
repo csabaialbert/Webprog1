@@ -1,4 +1,5 @@
 <body>
+
         <div class="slideshow-container">
 
             <!-- Full-width images with number and caption text -->
@@ -124,4 +125,17 @@
                 </td>
             </tr>
         </table>
+    </div>
+        <div>
+            <!-- Bootstrap CSS file -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            </div>
+        <div class="d-flex justify-content-center">
+                <iframe class="aligncenter" width=600 height=350 src="https://www.youtube.com/embed/lK9_ry9FE6c" title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+        </div>
+        <div class="d-flex justify-content-center" style="margin-top: 80px;">
+                <video width="350" height="350" controls>
+                <source src="./gallery/best-short-funny-dog-videos-2017-20.mp4" type="video/mp4">
+                </video>
+        </div>
     </body>

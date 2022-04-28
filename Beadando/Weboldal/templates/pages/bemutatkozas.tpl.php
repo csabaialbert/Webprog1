@@ -19,9 +19,7 @@
 
         <b>A menhely nem altat</b>, éppen ezért sok idősebb kutyus is található a gondozásunkban, de bízunk benne, hogy az ő utolsó éveiket is meg tudjuk szépíteni egy szerető gazdival.
     </p>
-    <div id="vid">
-        <iframe  width=600 height=350 src="https://www.youtube.com/embed/lK9_ry9FE6c" title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
-    </div>
+    
     <p id="koszonet">
         ❤🐾Köszönjük munkánk iránti segítségét!🐾❤
     </p>
