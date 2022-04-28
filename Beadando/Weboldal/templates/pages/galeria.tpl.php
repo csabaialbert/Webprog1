@@ -1,3 +1,6 @@
+
+
+
 <?php
     // Alkalmazás logika:
     include('./includes/config_galeria.inc.php');
@@ -12,9 +15,10 @@
                 $kepek[$fajl] = filemtime($MAPPA.$fajl);            
         }
     closedir($olvaso);
-    ?>
 
-<body>
+
+?>
+    <body>
     
     <div id="galeria">
     <h1 id= "cim">Galéria</h1>
@@ -35,3 +39,11 @@
     ?>
     </div>
 </body>
+
+
+    
+
+
+
+
+
