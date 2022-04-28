@@ -1,0 +1,214 @@
+.center 
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    padding-top: 30px;
+}
+.szinez
+{
+    background-color:rgb(233, 79, 79);
+    height: 230px;
+}
+a#lista
+{
+    display: inline;
+    text-align:center;
+    width: auto;
+    font-size: 14pt;
+    font-family: Calibri;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(189, 189, 189);    /*margin: 10px 100px 50px 10px;*/
+    border-radius: 20%;
+}
+
+ul#vizszintes
+{
+	list-style: none;
+}
+li
+{
+    display: inline;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+a#lista:hover
+{
+    color: rgb(255, 255, 255);
+}
+.table 
+{
+	display: table;   
+	margin: 0 auto;
+    padding-top: 30px;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  a#honapkutya
+  {
+    color: rgb(48, 48, 48);
+    font-size: 14pt;
+    font-family: Calibri;
+    text-decoration: none;
+   
+
+  }
+  table#kedvenc{
+      
+    margin: auto;
+    width: 1000px;
+    height: 350px;
+    box-shadow: 0pt 0pt 5pt ;
+    border-radius: 5pt;
+    table-layout: fixed;
+  }
+  tr
+  {
+      
+      display: block;
+    margin: auto;
+  
+  }
+  td
+  {
+    display: inline-block;
+    margin: auto;
+    
+    
+  }
+  
+  .image {
+    margin: auto;
+    position: relative;
+    width: 400px;
+}
+
+.image__img {
+    display: block;
+    height: 180px;
+    border-radius: 5pt;
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5pt;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image__overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.image__overlay--primary {
+    background: #76ffe4;
+}
+
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+}
+
+.image__overlay:hover > * {
+    transform: translateY(0);
+}
+
+.image__title {
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(75, 74, 74);
+}
+
+.image__description {
+    text-align: center;
+    font-size: 10pt;
+    font-family: Calibri;
+    text-decoration: none;
+    width: 80%;
+    color: rgb(75, 74, 74);
+    
+}
+  

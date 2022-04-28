@@ -1,28 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" type="text/css"  src="C:\Users\Albi\Documents\GitHub\Webprog1\styles\style.css">
-        <meta charset="utf-8">
-        <title>Csömöri Állatvédő Civil Szervezet | Kutyamenhely</title>
-    
-    </head>
-    <main class ="szinez" >
-        <a href="#"><img src="logo.png" alt="logo" class="center"></a>
-        <div class ="table">
-            <ul id="vizszintes">
-                <li><a id="lista" href="#">Főoldal</a></li>
-                <li><a id="lista" href="#">Lakóink</a></li>
-                <li><a id="lista" href="#">Adó 1% felajánlás</a></li>
-                <li><a id="lista" href="#">Támogatás</a></li>
-                <li><a id="lista" href="#">Örökbefogadás</a></li>
-                <li><a id="lista" href="#">Blog</a></li>
-                <li><a id="lista" href="#">Hasznos oldalak</a></li>
-                <li><a id="lista" href="#">Rólunk</a></li>
-                <li><a id="lista" href="#">Kapcsolat</a></li>
-            </ul>
-        </div>  
-    </main>
-    <body>
+<body>
         <div class="slideshow-container">
 
             <!-- Full-width images with number and caption text -->
@@ -126,5 +102,3 @@
 </tr>
 </div>
     </body>
-</html>
-
