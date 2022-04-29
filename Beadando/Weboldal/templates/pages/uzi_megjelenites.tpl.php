@@ -2,7 +2,7 @@
 <?php
 
 try {
-    $pdo = new PDO('mysql:host=localhost;dbname=dbase', 'root', '');
+    $pdo = new PDO('mysql:host=localhost;dbname=kdbase', 'root', '');
 
     $sql = 'SELECT  id,
                     nev,

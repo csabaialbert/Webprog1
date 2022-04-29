@@ -1,7 +1,7 @@
-CREATE DATABASE `dbase`
+CREATE DATABASE `kdbase`
 CHARACTER SET utf8 COLLATE utf8_general_ci;
 
-USE `dbase`;
+USE `kdbase`;
 
 CREATE TABLE `felhasznalok` (
   `id` int(10) unsigned NOT NULL auto_increment,
