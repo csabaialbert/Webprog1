@@ -1,3 +1,4 @@
+<script type="text/javascript" src="js/main.js"></script>
 <body>
     <div id="indent">
         <h1 id="cim">Kapcsolat</h1>
