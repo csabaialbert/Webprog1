@@ -35,8 +35,8 @@
             <p><b>Telefonszámunk 10 – 18 óra között hívható.</b> A telefonon Önkéntesünk fogadja a hívásokat, ahogy ideje engedi, ezért megértésüket kérjük, ha esetenként a szám nem elérhető. Kérjük, legyenek türelemmel és ilyen esetben próbálják kicsit később hívni! Visszahívást kezdeményezni nem áll módunkban.
             </p>
         </div>
-        <h1>Kapcsolat</h1>
-        <form name="kapcsolat" action="php/kapcsolat.php" onsubmit="return ellenoriz();" method="post">
+        <h1>Űrlap</h1>
+        <form name="urlap" action="?oldal=srv_ell" onsubmit="return ellenoriz();" method="post">
             <div id="urlap">
                 <label><input type="text" id="nev" name="nev" size="20" maxlength="40">Név (minimum 5 karakter): </label>
                 <br/>
