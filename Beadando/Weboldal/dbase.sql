@@ -27,3 +27,19 @@ INSERT INTO `felhasznalok` (`id`,`csaladi_nev`,`uto_nev`,`bejelentkezes`,`jelszo
  (10,'Családi_10','Utónév_10','Login10',sha1('login10')),
  (11,'Családi_11','Utónév_11','Login11',sha1('login11')),
  (12,'Családi_12','Utónév_12','Login12',sha1('login12'));
+
+
+CREATE TABLE `request` (
+  `id` int(10) unsigned NOT NULL auto_increment,
+  `nev` varchar(45) NOT NULL default '',
+  `datum` varchar(20) NOT NULL default '',
+  `email` varchar(50) NOT NULL default '',
+  `szoveg` varchar(240) NOT NULL default '',
+  PRIMARY KEY  (`id`)
+)
+ENGINE = MYISAM
+CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+INSERT INTO `request` (`id`,`nev`,`datum`, `email`,`szoveg`) VALUES 
+ (1,'Gipsz Jakab','2021/12/12','gipsz.jakab@gmail.com' ,'Iskolában azt mondta, hogy a kutyám megette a házi feladatomat, 
+ ezért nagyon szeretnék egy olyan kutyát aki házi feladatokat eszik');

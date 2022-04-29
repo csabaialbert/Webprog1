@@ -27,7 +27,7 @@
 	if(isset($_SESSION['login'])) 
 	{ 
 	$fel_nev = $_SESSION['login'];	
-	$dbh2 = new PDO('mysql:host=localhost;dbname=urlapdb', 'root', '',
+	$dbh2 = new PDO('mysql:host=localhost;dbname=dbase', 'root', '',
 		array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
 	$dbh2->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
 
@@ -40,7 +40,7 @@
 	else
 	{ 
 		
-	$dbh2 = new PDO('mysql:host=localhost;dbname=urlapdb', 'root', '',
+	$dbh2 = new PDO('mysql:host=localhost;dbname=dbase', 'root', '',
 		array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
 	$dbh2->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
 
