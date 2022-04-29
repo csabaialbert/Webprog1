@@ -460,6 +460,17 @@ div#belepett
     color: rgb(75, 74, 74);
 }
 h1#urlap {
-    font-size: 12pt;
-    font-family: Calibri;   
+    text-align: center;
+    font-size: 36pt;
+    font-family: Calibri;
+    font-weight: bolder;
+    color: rgb(75, 74, 74);
+    border-bottom: 3px solid #717171;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+label.urlaplabel {
+    float: right;
+	border: 2px red solid;
+	padding: 2px;
 }

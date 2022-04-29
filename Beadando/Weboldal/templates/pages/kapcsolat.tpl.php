@@ -35,6 +35,8 @@
             </div>
             <p><b>Telefonszámunk 10 – 18 óra között hívható.</b> A telefonon Önkéntesünk fogadja a hívásokat, ahogy ideje engedi, ezért megértésüket kérjük, ha esetenként a szám nem elérhető. Kérjük, legyenek türelemmel és ilyen esetben próbálják kicsit később hívni! Visszahívást kezdeményezni nem áll módunkban.
             </p>
+            <p> Vagy az alábbi <b>Űrlap</b> segítségével vegyel fel velünk a kapcsolatot és az üzenet küldéstől számított 5 munkanapon belül a keresni fogjuk Önt.
+            </p>
         </div>
         <h1 id="urlap">Űrlap</h1>
         <form name="urlap" action="?oldal=srv_ell" onsubmit="return ellenoriz();" method="post">
