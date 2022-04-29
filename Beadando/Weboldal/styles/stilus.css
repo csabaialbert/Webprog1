@@ -459,10 +459,7 @@ div#belepett
     margin: auto;
     color: rgb(75, 74, 74);
 }
-
-fieldset
-{
-    width: 200px;
-    margin: auto;
-   
+h1#urlap {
+    font-size: 12pt;
+    font-family: Calibri;   
 }
