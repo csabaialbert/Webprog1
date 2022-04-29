@@ -1,6 +1,10 @@
 <?php
 
 	//szerver oldali ellenőrzés
+	$fel_nev = 'Vendég';
+	$datum = date('Y/m/d');
+
+
 	if(!isset($_POST['nev']) || strlen($_POST['nev']) < 5)
 	{
 		exit("Hibás név: ".$_POST['nev']);
@@ -19,17 +23,36 @@
 
 
 	//Adatok továbbítása az urlapdb táblának
+
+	if(isset($_SESSION['login'])) 
+	{ 
+	$fel_nev = $_SESSION['login'];	
+	$szoveg = $_POST['szoveg'];
 	$dbh2 = new PDO('mysql:host=localhost;dbname=urlapdb', 'root', '',
 		array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
 	$dbh2->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
 
-	$sqlInsert2 = "insert into request(id, nev, email, szoveg)
-		values(0, :nev, :email, :szoveg)";
+	$sqlInsert2 = "insert into request(id, nev, datum, szoveg)
+		values(0, :nev, :datum, :szoveg)";
 	$stmt2 = $dbh2->prepare($sqlInsert2);
-	$stmt2->execute(array(':nev' => $_POST['nev'], ':email' => $_POST['email'], ':szoveg' => $_POST['szoveg']));
+	$stmt2->execute(array(':nev' => $fel_nev, ':datum' => $datum, ':szoveg' => $szoveg));
 	
+	}
+	else
+	{ 
+		
+	$szoveg = $_POST['szoveg'];
+	$dbh2 = new PDO('mysql:host=localhost;dbname=urlapdb', 'root', '',
+		array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
+	$dbh2->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
 
-	$uzenet2 = "Sikeres küldés";
+	$sqlInsert2 = "insert into request(id, nev, datum, szoveg)
+		values(0, :nev, :datum, :szoveg)";
+	$stmt2 = $dbh2->prepare($sqlInsert2);
+	$stmt2->execute(array(':nev' => $fel_nev, ':datum' => $datum, ':szoveg' => $szoveg));
 	
+	}	
+	$uzenet2 = "Sikeres küldés";
+
 
 ?>

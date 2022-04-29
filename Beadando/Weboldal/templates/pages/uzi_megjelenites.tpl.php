@@ -6,7 +6,7 @@ try {
 
     $sql = 'SELECT  id,
                     nev,
-                    email,
+                    datum,
                     szoveg
                FROM request
               ORDER BY id DESC' ;
@@ -28,7 +28,7 @@ try {
                         <td id="kapcsolat1" style="width:200px">Azonosító: <?php echo htmlspecialchars($row['id']) ?></td>
                         <td id="kapcsolat1" style="width:200px">Név: <?php echo htmlspecialchars($row['nev']); ?></td>
                     
-                        <td id="kapcsolat1" style="width:200px">E-mail cím: <?php echo htmlspecialchars($row['email']); ?></td>
+                        <td id="kapcsolat1" style="width:200px">Dátum: <?php echo htmlspecialchars($row['datum']); ?></td>
                         <td id="kapcsolat1" style="width:700px">Üzenet:<?php echo htmlspecialchars($row['szoveg']); ?></td>
                     </tr>
                     
