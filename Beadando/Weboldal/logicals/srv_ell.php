@@ -27,29 +27,27 @@
 	if(isset($_SESSION['login'])) 
 	{ 
 	$fel_nev = $_SESSION['login'];	
-	$szoveg = $_POST['szoveg'];
 	$dbh2 = new PDO('mysql:host=localhost;dbname=urlapdb', 'root', '',
 		array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
 	$dbh2->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
 
-	$sqlInsert2 = "insert into request(id, nev, datum, szoveg)
-		values(0, :nev, :datum, :szoveg)";
+	$sqlInsert2 = "insert into request(id, nev, datum, email, szoveg)
+		values(0, :nev, :datum, :email, :szoveg)";
 	$stmt2 = $dbh2->prepare($sqlInsert2);
-	$stmt2->execute(array(':nev' => $fel_nev, ':datum' => $datum, ':szoveg' => $szoveg));
+	$stmt2->execute(array(':nev' => $fel_nev, ':datum' => $datum, ':email' => $_POST['email'], ':szoveg' => $_POST['szoveg']));
 	
 	}
 	else
 	{ 
 		
-	$szoveg = $_POST['szoveg'];
 	$dbh2 = new PDO('mysql:host=localhost;dbname=urlapdb', 'root', '',
 		array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
 	$dbh2->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
 
-	$sqlInsert2 = "insert into request(id, nev, datum, szoveg)
-		values(0, :nev, :datum, :szoveg)";
+	$sqlInsert2 = "insert into request(id, nev, datum, email, szoveg)
+		values(0, :nev, :datum, :email, :szoveg)";
 	$stmt2 = $dbh2->prepare($sqlInsert2);
-	$stmt2->execute(array(':nev' => $fel_nev, ':datum' => $datum, ':szoveg' => $szoveg));
+	$stmt2->execute(array(':nev' => $fel_nev, ':datum' => $datum, ':email' => $_POST['email'], ':szoveg' => $_POST['szoveg']));
 	
 	}	
 	$uzenet2 = "Sikeres küldés";
